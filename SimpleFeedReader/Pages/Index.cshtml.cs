@@ -12,7 +12,7 @@ namespace SimpleFeedReader.Pages
 {
     public class IndexModel : PageModel
     {
-        private NewsService _newsService;
+        private readonly NewsService _newsService;
         private readonly IConfiguration _configuration;  
    
         public IndexModel(NewsService newsService, IConfiguration configuration)
